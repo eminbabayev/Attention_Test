@@ -1,0 +1,100 @@
+.side-table{
+
+    width: 100px !important;
+    text-align:center;
+
+}
+
+.main-table{
+
+    width:400px !important;
+    text-align:center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.main-table td{
+    width: 20%;
+    height: 80px;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.red{
+    color: red;
+}
+.black{
+    color: black;
+}
+.back-gray{
+    background-color: gray;
+}
+.back-red{
+    background-color: red;
+}
+.silver{
+
+    color: silver !important;
+    cursor: default!important;
+    
+
+}
+.yellow{
+    background-color: yellow;
+
+}
+
+.blink-me{
+    animation-name: blinker;
+    animation-duration: 0.1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+  
+}
+@keyframes blinker{
+    0% {opacity: 1.0;background-color: grey;}
+    50% {opacity: 0.0;}
+    100% {opacity: 1.0;background-color: grey;}
+}
+
+.blink-me1{
+    animation-name: blinker1;
+    animation-duration: 0.1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+
+}
+@keyframes blinker1{
+    0% {opacity: 1.0;background-color: red;}
+    50% {opacity: 0.0;}
+    100% {opacity: 1.0;background-color: red;}
+}
+.redbtn{
+    opacity: 0;
+}
+.red-black-btn{
+    opacity: 0;
+}
+
+#runner{
+    display: none;
+   
+}
+.dis{
+    opacity: 0.2;
+}
+.text1{
+    opacity: 1;
+}
+.text2{
+    opacity: 0;
+}
+.text3{
+    opacity: 0;
+}
+#red-time{
+    background-color: white !important;
+}
+#short-time{
+    background-color: white !important;
+}

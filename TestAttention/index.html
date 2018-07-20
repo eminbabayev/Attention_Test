@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Тест на концентрацию и внимание</title>
+</head>
+<body>
+
+<div class="container">
+    <section id="explain-text">
+        <div class="row">
+            <div class="col-md-9">
+                <div id="b-exp" class="exp"><p>Ваша задача — указать все чёрные числа в порядке возрастания от 1 до 13.
+                    <br>
+                    Приготовьтесь, сконцентрируйтесь.</p>
+                    <button id="start-b-btn" class="btn btn-secondary">Начать</button>
+                </div>
+                <div id="r-exp" class="exp"><p>Теперь Вы должны указать все красные числа в порядке убывания от 12 до 1.</p>
+                    <button id="start-r-btn" class="btn btn-danger">Начать</button>
+                </div>
+                <div id="br-exp" class="exp"><p>А теперь сконцентрируйтесь!
+                    <br>
+                    Вы должны указывать по очереди то чёрное число,
+                    то красное, причём чёрные идут в порядке возрастания, а красные — в порядке убывания.
+                    Например: 1-чёрная, 12-красная, 2-чёрная, 11-красная, и т.д.</p>
+                    <button id="start-br-btn" class="btn btn-warning">Начать</button>
+                </div>
+                <div id="placeholder">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="row">
+        <div class="col-md-4">
+            <table class="table-bordered side-table">
+                <thead>
+                <tr>
+                    <th scope="col">Ч</th>
+                    <th scope="col" style="color:red;">К</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>11</td>
+
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td id="black-time">0</td>
+                    <td id="red-time">0</td>
+                </tr>
+                <tr>
+                    <td id="black-red-time" colspan="2">0</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-8">
+            <table class="table table-bordered main-table">
+                <thead>
+                </thead>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+            <span id="runner"></span>
+
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+<script src="src/jquery-runner.js"></script>
+<script src="src/script.js"></script>
+
+</body>
+</html>
